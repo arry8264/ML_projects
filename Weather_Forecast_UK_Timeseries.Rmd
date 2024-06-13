@@ -1,0 +1,329 @@
+---
+title: "DAT7006- Data Science"
+output: word_document
+date: "2024-05-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+M.Sc. Data Analytics & Technologies
+
+Assessment 2
+
+DAT7006- Data Science
+
+Course/Program: M.Sc. Data Analytics and Technologies
+
+Module Name: DAT7006 Data Science
+
+Assessment Submission Date: 
+
+# Introduction
+
+## Location
+
+Southwest England, western Brittany, and southern Ireland border the Celtic Sea (Hernvann and Gascuel, 2020). Its marine history and ecology are significant. This 500,000-square-kilometer, half-enclosed sea has marine life, habitats, and cultural sites that have long interested mariners, scientists, and environmentalists (Hernvann and Gascuel, 2020).
+Rough cliffs, sandy beaches, and rocky outcrops define Celtic Sea coastlines. The warm Gulf Stream and chilly North Atlantic Drift have an impact on the oceans (Bundy et al., 2021). It connects the northeast Bristol Channel to the southwest Bay of Biscay. These currents alter the temperature and create a unique combination of temperate and subtropical marine ecosystems that support a variety of marine species and habitats (Bundy et al., 2021). Nearby residents value the Celtic Sea for its cultural significance. Its name honors the Celtic people who lived across Ireland, Wales, Cornwall, and Brittany and left a rich language, music, and seafaring culture (Megrey and Moksness, 2009). These coastal communities' residents feel tied to their marine heritage and depend on the water for food, jobs, and entertainment.
+
+From microscopic plankton to gigantic whales, the Celtic Sea is a biodiversity hotspot (Russo, Villasante and Libralato, 2023). Cod, haddock, and mackerel thrive in its nutrient-rich oceans. Seals, dolphins, and seagulls prey on these fish (Russo, Villasante and Libralato, 2023). Many types of whales migrate and reproduce in the Celtic Sea, making it an important marine conservation area. The Celtic Sea is essential to the ecology, but overfishing, ecosystem loss, pollution, and climate change threaten it (Henk J.L. Heessen, Niels Daan and Ellis, 2015). Governments, scientists, and local communities must collaborate to support long-term marine management and preserve this unique marine habitat. To conclude, the Celtic Sea is a fascinating mix of geography, culture, and nature. It also shows how marine processes affect human societies (Henk J.L. Heessen, Niels Daan and Ellis, 2015). A deeper exploration of our seas can teach future generations how to care for them and reveal their complex forces.
+
+## Significance
+
+The Celtic Sea is important scientifically, culturally, economically, and biologically (Lefebvre and Devreker, 2020). Its location, variety of plants and animals, and cultural background make it a study, conservation, and growth center. Several sea creatures depend on the Celtic Sea for their survival (Lefebvre and Devreker, 2020). It also helps local ecosystems thrive. Its oceans are full of nutrients that support productive fishing that feeds people in the British Isles and along the coast (Tsikliras et al., 202}). Oceanography that changes quickly and food webs that are very complicated make the sea is a great place to study marine ecology, population trends, and how ecosystems interact.
+(Fincham et al., 2023) The Celtic Sea is a great place for shipping, tourists, fishing, and renewable energy. There are good fishing spots where you can catch fish and shellfish. This keeps the money in coastal towns stable. Sea travel between ports on the Atlantic coast makes it easy to do business with other countries (Fincham et al., 202303). The Celtic Sea could use power from the wind, waves, and tides, which would reduce the need for fossil fuels and promote sustainable growth. For hundreds of years, marine folklore, traditions, and societies have grown up around the Celtic Sea (Pitois et al., 2023). The sea is named for the Celts, who sailed it and left behind many stories, traditions, and ways of life at sea. Picois et al. (2023) say that times, songs, and stories still remind us of this society. When people live near the coast or visit, they feel at home.In the wild, the Celtic Sea is a great place to learn about meteorology, marine biology, geology, and history (Robert, Pawlowski, and Kopp, 2022). Because the ocean is constantly changing, researchers can investigate oceanographic processes, climate change, and marine species. Oceans all over the world respond in this way to changes in their surroundings (Robert, Pawlowski, and Kopp, 2022). Arts and artifacts, shipwrecks, and underwater scenery found in the Celtic Sea show how people have traveled the seas and written down history. In general, the Celtic Sea is important (Rose, 2019). It is a major hub for business and culture, as well as the site of many important scientific discoveries. It is also home to many sea creatures. You should take care of the sea in a way that protects the environment and meets people's needs (Rose, 2019). The sea is important for science, culture, business, and the environment.
+
+## Problem statement
+
+The Celtic Sea has several maritime environments. Many sites allow fishing, working, and socializing (Valdés et al., 2022). However, no one knows how these areas work, or how weather and other variables affect them. The project examines how Celtic Sea surface temperature, wind speed, rainfall, and soil moisture affect marine life, fishing production, and social and economic issues. The study will model these relationships to determine what might transform an area and how to maintain it.
+
+## Research questions
+
+| Research Question                                                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. How do surface temperature and wind speed affect fisheries output?                          |
+| 2. What impact do these conditions have on the long-term sustainability of fishing in the Celtic Sea?                                      |
+| 3. How do fluctuations in soil temperature and moisture impact the well-being and resilience of coastal ecosystems in the Celtic Sea?        |
+| 4. What factors contribute to the differences between convective and non-convective rainfall events in the Celtic Sea region?              |
+| 5. What effects do these changes have on the water quality and natural rhythms in the area?                                                |
+| 6. What effects do weather and the environment have on shipping, tourists, and the production of renewable energy in the Celtic Sea region? |
+
+## Hypothesis Statements
+
+| Hypothesis                                           | H0                                                                                                                                | H1                                                                                                                                                |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hypothesis 1                                         | There is no significant relationship between changes in surface temperature, wind components, rainfall patterns, and the distribution and abundance of marine species in the Celtic Sea region. | There is a significant relationship between changes in surface temperature, wind components, and rainfall patterns and the distribution and abundance of marine species in the Celtic Sea region. |
+| Hypothesis 2 | There is no significant difference in the drivers of variability between convective and non-convective rainfall events in the Celtic Sea region.                                                 | There are significant differences in the drivers of variability between convective and non-convective rainfall events in the Celtic Sea region.            |
+
+## Significance
+
+If you want to know what's going on in the Celtic Sea, you need data (Vladimir Laptikhovsky et al., 2022). As the weather changes, so does the sea life in the Celtic Sea (Fincham, Veneziano, and Ellis, 2020). To help researchers figure out what is going on with these changes, look at past thoughts, patterns, and trends. What makes the marine life in the Celtic Sea strong and healthy? The factors that contribute to the strength and health of the sea life in the Celtic Sea include the temperature of the top water, the speed of the wind, the pattern of rainfall, the amount of water in the land, among others (Fincham, Veneziano, and Ellis, 2020). This study contributes to environmental protection, monitors its changes, and uncovers unusual phenomena. Because of climate change, oceans around the world are in trouble (Genomic Insights into Algae Biology, 2012). One of these is the Celtic Sea. Climate change affects the sea surface temperature, the way it rains, and the places where different species live. According to Genomic Insights into Algae's Biology (2012), these numbers help us figure out how weak a setting is and how to make it stronger. Reading and analyzing data is the most important part of science because it helps us learn more about the ocean. We can test predictive models and see the ecology and biogeochemistry of the Celtic Sea by using big sets of data from marine surveys, remote sensing platforms, and environmental monitoring stations (Birch et al., 202). Several groups have looked at data from the Celtic Sea. Birch et al. (2023) say that different groups care about how the environment changes and stays the same in the area. Data analysis assists the government in monitoring sea resources, ensuring environmental safety, and making decisions on climate policy. Fariñas-Bermejo et al. (2023), for example, say that data analysis helps politicians protect the ecosystem of the Celtic Sea by coming up with laws, plans for protection, and ways to handle resources. NGOs and environmental groups play an important role in protecting species and the sea environment. These groups want to get a better handle on the Celtic Sea, so they use evidence-based advocacy (Fariñas-Bermejo et al., 2023) to track key markers, set conservation goals, and look at data. Researchers, experts, and scholarly groups are the ones who look into marine ecosystems and climate change the most. It is necessary to analyze data in order to learn more about the area around the Celtic Sea, share study results, and do more research (Headlam et al., 2020). They can work together better if they talk and look at the facts. This makes science better and gets people from different fields together, say Headlam et al. (2020). Businesses that fish and raise fish can run more smoothly; fish numbers will be safer, and people will care less about the environment if they know the weather. According to Lincoln et al. (2024), data can assist fisheries managers in monitoring the ocean, assessing the health of their fisheries, and devising innovative strategies to safeguard the marine resources of the Celtic Sea. People who live and work near the Celtic Sea are concerned. It can help us understand how people make a living, how the weather is changing, and how dangerous the coast is, according to Lincoln et al. (2024). Now the people who live there can choose what to do. They can take care of the environment and pass on information from the native people. Once groups know the facts, they can make smarter decisions about rules, resources, and ocean safety (Vivanco, 2020). Numbers help businesses identify ocean and environmental risks and determine how to address them. If people who make choices look at old records and figure out the risks, they can help protect wildlife, make good use of resources, and deal with new problems like climate change, habitat loss, and pollution. For Vívanco in 2019. Stats help lawmakers figure out what to do, set safety goals, and make long-term rules for how to run the ocean. If people in the Celtic Sea use science and pay attention to what each other says, they can be more open, follow the rules, and work together better. Managing resources effectively keeps the world safe and ensures that everyone has a fair chance to use sea resources. Hammermeister et al. (2023) say that looking at data helps people choose what to buy first, how to use resources, and how to make management systems that are flexible and work for everyone. To safeguard important places, create MPAs, and push for management in the Celtic Sea that is based on the environment, you can use spatial analysis and decision support tools. Indigenous people, local communities, and other stakeholders should be involved in maritime governance decisions to support social justice, stewardship, and resilience (Alec et al., 202). With the right information, skills, and tools for data analysis, communities can take part in environmental management programs. Everyone in the Celtic Sea area can act more quickly when outreach and teaching are based on facts. This is because it increases skills, strengthens communities, encourages people to work together, and speeds things up.People need to know about the Celtic Sea's environment, get active, and be able to make decisions that support fair, long-term control of marine resources. A look at data can help people and groups fix natural problems, reduce risks, and improve the Celtic Sea and its people (Hull et al., 2020).
+
+# Literature review
+
+## Celtic Sea changing environment
+
+There are several things that cause the shape of the Celtic Sea to change between the northwest coast of France and the southwest coast of Ireland. This is true for scenery, sea currents, and airflow. A study from 2022 by Lynch et al. says that these changes are very important for changing the ocean's environment.These models and old satellite data let us see how the weather, currents, and amount of chlorophyll in the sea change over time and space (Cadrin, Kerr, and Stefano Mariani, 2014). Recent studies reveal that the Celtic Sea has upwelling zones, frontal systems, and mesoscale eddies. These are very important for moving nutrients around and helping plants grow (Sven Sebastian Uhlmann et al., 2019). They make sure everything is okay.
+
+## Impact of climate change
+
+Climate change is changing the animals that live in the Celtic Sea, the way the water moves, and the areas close to the coast. Tóth et al. (2020) say that the world's greenhouse gas emissions are making the seas warmer, changing the way it rains, and shifting the winds.
+
+They say that the Celtic Sea will get warmer and more acidic over time (Long et al., 2021). When new species come in and spread, this will change, leaving shoreline areas more open to damage (Long et al., 2021). According changes are very important for businesses that fish, for ecological services, and for the health of the sea environment, say Heessen, Daan, and Ellis (2023).
+
+## Response of ecosystems to environmental changes
+
+P. Rodríguez-Salgado et al. (2022) studied how organisms in the Celtic Sea that live on the water's surface, on the bottom, and in the open ocean adjust to changes in their surroundings. Researchers examining phytoplankton mobility found that fertilizer inputs, water conditions, and light availability affect annual blooms (P. Rodríguez-Salgado et al., 2022).
+
+Similar to zooplankton communities, temperature, circulation, and food availability affect species types, numbers, and locations (Landa et al., n.d.). Benthic ecosystems, including cold-water coral reefs and seabed sediments, react differentially to bottom trawling, sedimentation rates, and ocean acidification (Landa et al., n.d.).
+
+## Management and environmental protection plans
+
+MPAs, fisheries legislation and integrated management plans conserve biodiversity and promote sustainable resource use in the Celtic Sea ecosystem. Effective MPAs use adaptive management, stakeholder involvement, and monitoring mechanisms to achieve conservation goals (Ellis et al., 2024).
+
+It's still difficult to reconcile protection goals and socioeconomic interests, address long-term human impacts, and create climate-friendly management plans (Rotjan et al., 2021). To understand the Celtic Sea ecosystem and find scientific solutions to environmental issues, researchers from different fields need to work together (Rotjan et al., 2021).
+We now know more about environmental change, climatic change, ecological response, and the problems Celtic Sea managers face (Silvar-Viladomiu et al., 2023) thanks to an earlier study. By combining study results, the literature may help to identify knowledge gaps, research topics, and analytical methods for important problems that threaten the long-term health and survival of this marine ecosystem.
+
+# Novelty
+
+This research on the Celtic Sea is important for its new ideas and contributions. This study finds it interesting to use multiscale nature data to track changes in the Celtic Sea. This paper uses observations from the field, oceanographic models, and pictures taken from space to show how the temperature, currents, and amounts of nutrients on the sea surface change over time and space. This approach combines different types of data to show how physical events, natural events, and human actions change ecosystems over time and space. Using statistical models and machine learning, this study looks at very large sets of data about the environment and finds patterns and trends that are important. According to Patel (2023), principal component analysis, cluster analysis, and forecast modeling can help find changes in the environment, guess what will happen in the future, and figure out how climate change might impact the Celtic Sea ecosystem. Researchers from different fields can work together to find new facts because the study is more accurate and reliable thanks to the new methods. Stakeholder involvement and decision support are another important part of this study. Getting people involved in fisheries, conservation, and policymaking can help study results be useful, important, and easy to understand. People who take part in stakeholder workshops, participatory modeling exercises, and scenario-based simulations talk, work together, and make choices that help manage resources, protect the environment, and adapt to changes in the environment (Patel, 202ѹ). Scientists use this study to learn more about the Celtic Sea's ecosystem and work on policy issues at the local and global levels. This study provides us with new information about how ecosystems react to environmental changes and how to handle them. This helps policymakers make decisions based on facts and encourages long-term marine growth.
+
+In conclusion, this work is unique because it looks at the whole ecosystem, uses current analytical tools, puts an emphasis on stakeholder involvement, makes scientific progress, and is policy-relevant. Pushing research quality and innovation is necessary to understand the Celtic Sea ecology. This will also encourage sustainable management for future generations.
+
+# Methodology
+
+Most individuals agree on CRISP-DM for data mining task management (Schröer, Kruse and Gómez, 2021). Understanding the business, data, preparation, modeling, reviewing, and deploying are the six steps. A data analysis project's success depends on each phase; thus, there is a need to tailor them to the situation (Schröer, Kruse and Gómez, 2021). This initial phase is to understand the project's business goals and demands. This entails clarifying what data insights this project need for Celtic Sea research (Solano et al., 2022). There is a need to determine how environmental factors affect the sea, what trends exist, and how these answers can assist us in making judgments. After determining research goals, the project can analyze the data. This stage involves understanding, reviewing, and cleaning the dataset (Solano et al., 2022). This study examines how location, longitude, temperature, pressure, wind speed and direction, and rainfall affect each other and the Celtic Sea. Data preparation usually takes the longest (Jaggia et al., 2020). There is a need to clean, convert, and preprocess data to prepare it for analysis. This may involve missing numbers, outliers, and formatting issues (Jaggia et al., 2020). For this investigation, there is a need to integrate or split the data into the correct space or time details. Modeling using statistical and machine learning methods finds data trends and relationships (Saltz, 2021). Based on the study questions and hypotheses, this research chooses suitable modeling methodologies. This could include data pre-processing steps, exploratory data analysis, statistical analysis, time series forecasting and machine learning to determine how natural factors affect marine conditions; clustering to locate unique Celtic marine zones; or time series analysis to find long-term patterns (Saltz, 2021). This step tests the models to see if they meet the goals. The business understanding stage establishes project goals and success criteria, which the study compare. The evaluation determines whether models answer study questions and provide meaningful knowledge. Finally, in the deployment step, the study apply the research findings. This could involve creating stakeholder-useable reports, maps, or decision-making tools. How effectively this study disseminate the analysis results will determine whether they influence decisions in the Celtic Sea.
+
+By utilizing the CRISP-DM framework, this study can organize the analysis and ensure that each phase meets the problem statement and data specifications. The output will gain useful knowledge of the Celtic Sea in order to make decisions. 
+
+# Data pre-processing
+
+In this data for last time observation of 31st May TSK was not having date/time label which corrected Manually. There are total 2482 columns in WRF data, first 2 are for Lat & Long. Rest 2480 columns are operated as 31 x 80. 31 means 31 days of May, 80 is 10 x 8. In 1 day of May with the interval of 3 hours we can observe total 8 cases and in each case we have 9 parameters and 1 TSK, so total 10 columns. so 10 x 8 columns for 1 day, 80 x 31 columns for May and 2 columns of lat & long makes total 2482. Logic hear is used to subset the data for each Observational point like 01-05-2018 at 00:00 with 2 lat & long columns create a subset of 12 columns then from this set using the label of column 3 extracted date and time to create additional 2 columns. So we will get 14 total columns in each subset of table data. The further steps are described with detailed code in R script. The next step will create 249 subset of data tables, saved on Output folder of this working directory and now delete the last file subset_249 as it does not contain 10 columns. File size for this subset clearly indicates the difference. What the code saved as subset in the above part, now the step is to read each file one by one and do formting. Thew step is to read 1 file with total 12 columns. The column names are, X,    X.1,    X31.05.2018.06.00, X.2180, X.2181, X.2182, X.2183, X.2184, X.2185, X.2186, X.2187, X.2188, XLAT,	XLONG, TSK,  PSFC, U10, V10, Q2,  RAINC,  RAINNC,    NA, TSLB,  SMOIS. The idea is extract DATE & TIME values for the COLUMN NAME of 3rd column and create 2 additional columns, next rename all 14 columns as per the parameters labels and save this file. At last, the pre-processing steps is to check the NA's of all columns and replace them with mean. 
+
+# Exploratory data analysis
+
+First, this report analyze the structure of the dataset. Then summary statistics describe the minimum, maximum, mean, median and 1st quantile of the data. Then histogram of skin temperature is evaluated. The report then analyzed the relation ship between variables using scatter plot. Next, the study analyzes the correlation analysis for the"U10", "V10", "TSK". 
+
+Exploratory data analysis (EDA) of 110,112 records across all the variables provides useful weather factor information. These elements include date, time, place, latitude, longitude, skin temperature (TSK), surface pressure (PSFC), wind components (U10 and V10), specific humidity (Q2), rainfall (Rainc and Rainnc), snowfall (Snow), land surface temperature (TSLB), and soil moisture (SMOIS). Summary statistics show numerical variables' central trend and variability. This clarifies parameter range and distribution. The mean skin temperature (TSK) is 285.3 °C; however, the range is 0 to 290.4 °C. This indicates little volatility around the mean number. Surface pressure (PSFC) runs from 0 to 103,201 Pa, with a mean of 101,754 Pa, the normal air pressure range. U10 and V10 had average wind speeds of 0.5812 and -0.4848 m/s, respectively, indicating current wind conditions. Observations showed low specific humidity (Q2), rainfall (Rain and Rain), and snowfall (Snow) variables, indicating dry weather. Correlation analysis determines correlations between variables, such as meteorological parameter dependencies. The minor negative association between U10 and PSFC (-0.08385654) suggests that increased wind speed lowers surface pressure. The lack of a correlation between PSFC and TSK (-0.0006528438) or U10 and TSK (-0.07239934) implies that surface pressure and wind speed don't affect skin temperature.
+
+Experimental data analysis provides a comprehensive picture of the weather conditions in the dataset. Further study and modeling can accurately predict weather patterns and aid farming, transportation, and disaster management decisions. The visualizations of the histogram and scatter plot is described below. 
+
+# Statistical analysis
+
+## Univariate analysis
+
+For univariate aalysis of the dataset, this analysis completed boxplot of skin temperature, and bar plot of rainfall. 
+
+The boxplot of skin temperature illustrates the data's central trend, spread, and outliers. The boxplot in this analysis showed that skin temperatures were largely in a restricted range, with a few outliers that could indicate global change. This graph helps to explain the skin temperature range and extreme numbers that may affect the analysis. However, the rainfall bar plot illustrates how often different amounts of rainfall occurred in the dataset. This image makes it easy to compare rainfall frequency by binning different amounts. The bar plot showed where rainstorms occurred during our investigation, revealing how often and severely they poured in the study area.
+
+Univariate analyses are the first steps in evaluating the dataset and provide helpful information about variable distribution and characteristics (Boardman and Favis-Mortlock, 2013). They prepare for deeper dives and multivariate analytics to identify data patterns and relationships.
+
+## Bivariate analysis
+
+Based on the problem statement and research questions, this study conduct a bivariate analysis to investigate how meteorological variables affect Celtic Sea fisheries output, ecosystem health, and other factors.
+
+### Correlation analysis
+
+The correlation matrix demonstrates the dataset's key variables' complex relationships (Konstantinos Spiliopoulos and Weichert, 2013). As wind speed (U10) increases, surface temperature (TSK) may decrease. Convective (rainy) and non-convective (rainy) rainfall have weak correlations with surface temperature and wind speed; therefore, they don't affect each other. Wind speed is strongly negative for convective rainfall and very weakly positive for non-convective rainfall. Convective and non-convective rainfall often occur together due to a modest positive correlation. No substantial correlation exists between either type of rainfall and soil wetness. The correlation matrix depicts how surface temperature, wind speed, rainfall patterns, and soil moisture interact in the examined area in a complex way. This suggests that multiple factors influence the environmental changes in the Celtic Sea.
+
+```{r}
+# Your correlation matrix data
+correlation_matrix <- matrix(c(1.000000000, -0.072399335, 0.005109541, -0.0043012005, -0.0023343657,
+                                -0.072399335, 1.000000000, -0.134131281, 0.0591411225, 0.0083657346,
+                                0.005109541, -0.134131281, 1.000000000, 0.2506060409, 0.0032807579,
+                                -0.004301201, 0.059141123, 0.250606041, 1.0000000000, -0.0004238645,
+                                -0.002334366, 0.008365735, 0.003280758, -0.0004238645, 1.0000000000), 
+                              ncol = 5, byrow = TRUE)
+
+# Convert the matrix to a data frame
+correlation_df <- as.data.frame(correlation_matrix)
+
+# Set column names
+colnames(correlation_df) <- c("TSK", "U10", "Rainc", "Rainnc", "SMOIS")
+
+# Print the table
+knitr::kable(correlation_df)
+```
+### Scatter plots
+
+The visualizations below one showing the relationship between surface temperature and wind speed, and the other showing the relationship between rainfall and soil moisture levels. 
+
+## Multivariate analysis
+
+### Multiple regression analysis
+
+Multiple regression can show how independent factors affect a dependent variable. This study utilize R's lm() utility for conducting multiple regression analysis (Peck, Short and Olsen, 2020). 
+
+This study used multiple regression to examine surface temperature (TSK) and several predictor factors. The predictor factors included wind speed (U10), rainfall (Rainc and Rainnc), and soil moisture (SMOIS). The regression equation was: 
+
+TSK=285.93−0.13×U10−0.04×Rainc+0.01×Rainnc−0.50×SMOIS
+
+To see how TSK changes as each predictor variable changes by one unit, keep all other variables the same. The intercept term (285.93) displays the calculated mean TSK when all predictor factors are zero. The p-values illustrate how important each coefficient is for predicting TSK. There is a significant negative correlation between wind speed (U10) and temperature (TSK) (p<0.001). Faster winds lower surface temperatures.
+
+TSK has statistically significant connections to rainfall parameters (Rainc and Rain) and soil moisture (SMOIS); however, these relationships are greater than 0.05. With a multiple R-squared value of 0.005, the model explains little TSK variation. Other causes than those in the model may alter surface temperature, as indicated above. The regression analysis demonstrates that wind speed is a good surface temperature indicator, whereas rainfall and soil moisture are not.
+
+|               | Estimate | Std. Error | t value | Pr(>|t|) |
+|---------------|----------|------------|---------|----------|
+| (Intercept)   | 285.928  | 0.882      | 324.244 | <2e-16   |
+| U10           | -0.128   | 0.005      | -23.998 | <2e-16   |
+| Rainc         | -0.038   | 0.024      | -1.596  | 0.110    |
+| Rainnc        | 0.008    | 0.019      | 0.410   | 0.682    |
+| SMOIS         | -0.501   | 0.882      | -0.567  | 0.570    |
+
+### Cluster analysis
+
+Cluster analysis organizes related data by similarity (Zeng et al., 2022). For k-means clustering in R, this study  uses kmeans().
+
+The K-means clustering analysis identified three groups with different surface temperatures (TSK), wind speeds (U10), rainfall (Rainc and Rainnc), and soil moisture (SMOIS). Cluster 1, with 43,460 samples, experienced moderate wind speeds, rainfall, and a somewhat higher mean surface temperature of 286.11 Kelvin. This cluster had near-full soil water. Cluster 2 consisted of 42762 samples, with a significantly lower mean surface temperature of 285.45 Kelvin. Winds were faster than in Cluster 1, but rain was little. Cluster 2 has high soil moisture. Cluster 3 had the coolest average surface temperature, 283.79 Kelvin, with 23890 samples. This cluster had higher wind and rainfall speeds than others. Because it rained more, the soil water levels may have shifted from Clusters 1 and 2. The within-cluster sum of squares demonstrated cluster similarity. People in Clusters 1 and 2 were more similar because their values were lower. However, Cluster 3 exhibited a higher within-cluster sum of squares, suggesting variation. The between-cluster sum of squares demonstrated that each cluster was unique. These results help examine and interpret variable correlations by illustrating the dataset's patterns.
+
+# Linear regsression model
+
+The code splits data into training and testing sets. 80% of the data goes to training. It then fits a linear regression model to predict surface skin temperature (TSK) using independent parameters U10, Q2, Rainc, Rainnc, Snow, TSLB, and SMOIS from the training data. Following testing findings, the model predicts. The model's mean absolute error indicates its success. The linear regression model predicts skin surface temperatures. Overall, this method tests how effectively the model can guess skin surface temperature using independent factors.
+
+The linear regression model demonstrates that wind speed (U10) and specific humidity (Q2) greatly affect surface temperature (TSK), with values of -0.052 and 537.23. A unit increase in wind speed reduces TSK by 0.052 units. However, one unit of specific humidity increases TSK by 537.23 units. Although Rainc, Rainnc, Snow, TSLB, and SMOIS have high p-values and modest coefficient estimates, they do not appear to have a statistical effect on TSK. Snow's "NA" may have data or model issues. The F-statistic's low p-value (< 2.2e-16) supports the model's significance. The model's multiple R-squared value of 0.01065 suggests that predictors explain only 1.065% of TSK variation.
+
+# Decision tree
+
+The results of the decision tree are described below: 
+
+```{r}
+# Load necessary libraries
+library(rpart)
+
+# Your regression tree code
+model <- rpart(formula = TSK ~ U10 + Q2 + Rainc + Rainnc + Snow + TSLB + SMOIS, data = train_data)
+
+# Summary of the model
+summary(model)
+```
+
+
+
+# Discussion
+
+This report's discussion part goes over and beyond the steps of data pre-processing, exploratory data analysis (EDA), statistical analysis, and modeling to explain and explain what the results mean. This part talk more about the insights the analysis got, what the results mean, and what kinds of research and applications could do in the future.Pre-processing the data to make sure it was complete and consistent was the first step in the study. Fixing missing date/time labels by hand and organizing the data into groups made it easier to do more analysis. Exploratory data analysis gaven important information about the dataset's organization and features. Summary data gave a quick look at the numerical variables, showing the main trends and differences between weather parameters (Fathi et al., 2021).
+
+As well as showing the relationships between factors, the histogram of skin temperature and scatter plots of their distributions were also very helpful for understanding possible correlations. In this case, the histogram showed a small spread of skin temperatures with few "outliers." This means that there are some very high or very low values that need more research. Visually examining the connections between factors, like the link between surface temperature (TSK) and wind speed (U10), was possible with the scatter plots.Using univariate and bivariate statistics to look more closely at the dataset and its relationships with other factors gave more information. Visualizing the data was easier with box plots for skin temperature and bar plots for rainfall. These analyses set the stage for learning about variable distributions and finding possible outliers or trends in the dataset. Correlation research showed how complicated the connections are between weather variables like surface temperature, wind speed, and rainfall. Finding both positive and negative correlations between factors in the correlation matrix showed possible dependencies that could change weather patterns and environmental conditions. But the fact that some variables, like surface temperature and rainfall, didn't have high correlations with each other suggested that other things might be making them change.The goal of the linear regression modeling was to guess the skin surface temperature (TSK) by looking at separate weather factors like wind speed, specific humidity, rainfall, snowfall, land surface temperature, and soil moisture. Multiple regression analysis helped us understand how these factors individually affect TSK (Zied Ben Bouallègue et al., 2024). Wind speed and specific humidity turned out to be important predictors.
+
+With an average absolute error (MAE) of 3.72 °C, the linear regression model was able to predict, but it only explained a small part of the difference in TSK (R-squared = 0.01065). There may be other things besides those in the model that affect how the surface temperature changes. More work on the model and looking into other modeling methods could make the predictions more accurate and help us understand how TSK works better.Several areas, such as agriculture, transportation, and disaster management, can learn from the results of this study. Predicting the surface temperature and weather trends accurately can help people make decisions, decide how to use resources, and come up with ways to lower their risks. In the future, researchers might look into adding more factors, like atmospheric pressure, cloud cover, and solar radiation, to the models in order to make them better at making predictions. You could also look into machine learning algorithms, like random forests or neural networks, to see if they can show how variables combine and have relationships that aren't linear. In conclusion, this study gives us useful information about how complicated meteorological factors change over time and how they affect the temperature of the Earth's surface. We learn more about weather trends and what they mean for different uses when we use techniques like data pre-processing, exploratory data analysis, statistical analysis, and modeling together.
+
+# Conclusion
+
+In conclusion, this study examines weather data, particularly surface temperature, and its effects on environmental parameters. Pre-processing, exploratory data analysis, statistical analysis, and linear regression modeling taught us about weather trends and their meaning. Before analysis, data preprocessing ensured completeness and consistency. By displaying meteorological factor distribution and relationships, exploratory data analysis illuminates crucial patterns and trends. By measuring variable relationships, association analysis and linear regression modeling helped us estimate surface temperature. Although the linear regression model could predict surface temperature changes, it only explained a small portion of them. This study impacts agricultural, transportation, and emergency management. Predicting surface temperature and weather patterns accurately can improve resource management and decision-making. Researchers may add more features and use more advanced modeling approaches to improve prediction models. Machine learning techniques like random forests and neural networks can record complicated correlations and improve predictions. This study helps us understand how weather patterns develop over time and underscores the need to use many data analysis approaches to fully understand how they influence people and the environment.
+
+# References
+
+Alec, Heney, C., Lincoln, H., Colvin, C.N., Newell, H.H., Turner, R., McCarthy, I. and Hold, N. (2023). Bycatch in northeast Atlantic lobster and crab pot fisheries (Irish Sea, Celtic Sea and Bristol Channel). Fisheries Research, 265, pp.106745–106745. doi:https://doi.org/10.1016/j.fishres.2023.106745.
+
+Birch, S.F., Gregory, S.D., Maxwell, D.L., Desender, M. and Catchpole, T.L. (2023). How an illuminated headline affects catches and species separation in a Celtic Sea mixed demersal trawl fishery. Fisheries Research, [online] 268, p.106832. doi:https://doi.org/10.1016/j.fishres.2023.106832.
+
+Boardman, J. and Favis-Mortlock, D. (2013). Modelling Soil Erosion by Water. Springer Science & Business Media.
+
+Bundy, A., Coll, M., Koenigstein, S., Susa Niiranen, Maria Grazia Pennino, Renaud, P.E., Tam, J.C. and Morgane Travers-Trolet (2021). Managing for the Future: Understanding the Relative Roles of Climate and Fishing on Structure and Dynamics of Marine Ecosystems. Frontiers Media SA.
+
+Cadrin, S.X., Kerr, L.A. and Stefano Mariani (2014). Stock identification methods : applications in fishery science. Amsterdam: Elsevier.
+
+Ellis, J.V., Schuchert, P., D. Michael Scantlebury, C. Tara Marshall and Fernandes, P.G. (2024). Variable trends in the distribution of Atlantic cod (Gadus morhua) in the Celtic seas. Journal of fish biology. doi:https://doi.org/10.1111/jfb.15715.
+
+Fariñas-Bermejo, A., Berrow, S., Gras, M., O’Donnell, C., Valavanis, V., Wall, D. and Pierce, G.J. (2023). Response of cetaceans to fluctuations of pelagic fish stocks and environmental conditions within the Celtic Sea ecosystem. Csic.es. [online] doi:http://hdl.handle.net/10261/331859.
+
+Fathi, M., Haghi Kashani, M., Jameii, S.M. and Mahdipour, E. (2021). Big Data Analytics in Weather Forecasting: A Systematic Review. Archives of Computational Methods in Engineering. doi:https://doi.org/10.1007/s11831-021-09616-4.
+
+Fincham, J., Ellis, J.R., Veneziano, A. and Barry, J. (2023). The diversity of demersal assemblages of the western English Channel and the Celtic Sea. Marine Ecology Progress Series, 714, pp.15–25. doi:https://doi.org/10.3354/meps14350.
+
+Fincham, J.I., Veneziano, A. and Ellis, J.R. (2020). The influence of natural and anthropogenic factors on demersal fauna in the western English Channel and Celtic Sea. Journal of Sea Research, 165, p.101956. doi:https://doi.org/10.1016/j.seares.2020.101956.
+
+Genomic Insights into the Biology of Algae. (2012). Academic Press.
+
+Hammermeister, E., Loucaides, S., Papadimitriou, E., Schaap, A., Arundell, M., Chaney, E. and Mowlem, M. (2023). Autonomous marine carbon system observations and measurements onboard Boaty McBoatface: Results and analysis from an 8-day mission in the Celtic Sea. NASA ADS, [online] p.EGU–2942. doi:https://doi.org/10.5194/egusphere-egu23-2942.
+
+Headlam, J.L., Lyons, K., Kenny, J., Lenihan, E.S., Quigley, D.T.G., Helps, W., Dugon, M.M. and Doyle, T.K. (2020). Insights on the origin and drift trajectories of Portuguese man of war (Physalia physalis) over the Celtic Sea shelf area. Estuarine, Coastal and Shelf Science, 246, p.107033. doi:https://doi.org/10.1016/j.ecss.2020.107033.
+
+Heessen, H.J.L., Daan, N. and Ellis, J.R. (2023). Fish atlas of the Celtic Sea, North Sea, and Baltic Sea: Based on international research-vessel surveys. [online] Google Books. BRILL. Available at: https://books.google.com/books?hl=en&lr=&id=IM37EAAAQBAJ&oi=fnd&pg=PA4&dq=Celtic+sea+data+analysis&ots=n2ELg5UALX&sig=tc8RSfmA2iadxsbD1VZzMA0niM0 [Accessed 3 May 2024].
+
+Henk J.L. Heessen, Niels Daan and Ellis, J.R. (2015). Fish atlas of the Celtic Sea, North Sea, and Baltic Sea. Wageningen Academic Publishers.
+
+Hernvann, P.-Y. and Gascuel, D. (2020). Exploring the impacts of fishing and environment on the Celtic Sea ecosystem since 1950. Fisheries Research, 225, p.105472. doi:https://doi.org/10.1016/j.fishres.2019.105472.
+
+Hull, T., Johnson, M., Greenwood, N. and Kaiser, J. (2020). Bottom mixed layer oxygen dynamics in the Celtic Sea. Biogeochemistry, 149(3), pp.263–289. doi:https://doi.org/10.1007/s10533-020-00662-x.
+
+Jaggia, S., Kelly, A., Lertwachara, K. and Chen, L. (2020). Applying the CRISP‐DM Framework for Teaching Business Analytics. Decision Sciences Journal of Innovative Education, 18(4).
+
+Konstantinos Spiliopoulos and Weichert, D. (2013). Direct Methods for Limit States in Structures and Materials. Springer Science & Business Media.
+
+Landa, J., Korta, M., Gancedo, F., Reparaz, R., Rodríguez-Fernández, M., Gómez, L., Castro, A., Antolínez, B., Bruno, A., Abad, I., Landa, C., Gancedo, J., Loureiro, R., Antolínez, I. and Hernández, A. (n.d.). Available at: https://digital.csic.es/bitstream/10261/326651/4/Weight-length%20relationships%20and%20weight%20conversion%20factors%20in%20two%20stocks%20of%20megrim.pdf [Accessed 3 May 2024].
+
+Lefebvre, A. and Devreker, D. (2020). First Comprehensive Quantitative Multi-Parameter Assessment of the Eutrophication Status from Coastal to Marine French Waters in the English Channel, the Celtic Sea, the Bay of Biscay, and the Mediterranean Sea. Journal of Marine Science and Engineering, 8(8), p.561. doi:https://doi.org/10.3390/jmse8080561.
+
+Lincoln, H., Robins, P.E., Wilmes, S-B., S. Pérez-Mayol, Moore, A., Simpson, S., A. Goward-Brown, Heney, C., Malham, S., B. Morales-Nin, Hold, N. and McCarthy, I.D. (2024). Predicting potential spawning areas of European bass, Dicentrarchus labrax, in the Irish and Celtic seas. Fisheries Research, 270, pp.106884–106884. doi:https://doi.org/10.1016/j.fishres.2023.106884.
+
+Long, A.P., Haberlin, D., O Lyashevska, Brophy, D., Brendan O’ Hea, C O’Donnell, Scarrott, R.G., Lawton, C. and Doyle, T.K. (2021). Interannual variability of gelatinous mesozooplankton in a temperate shelf sea: greater abundance coincides with cooler sea surface temperatures. ICES journal of marine science, [online] 78(4), pp.1372–1385. doi:https://doi.org/10.1093/icesjms/fsab030.
+
+Lynch, K.E., Penk, M.R., Perrin, P.M. and Piggott, J.J. (2022). Cattle Grazing of a Celtic Sea Saltmarsh Affects Invertebrate Community Composition and Biomass, but not Diversity. Wetlands, 42(8). doi:https://doi.org/10.1007/s13157-022-01643-6.
+
+Megrey, B.A. and Moksness, E. (2009). Computers in Fisheries Research. Dordrecht: Springer Netherlands.
+
+P. Rodríguez-Salgado, Childs, C., Shannon, P.M. and Walsh, J.J. (2022). Influence of basement fabrics on fault reactivation during rifting and inversion: a case study from the Celtic Sea basins, offshore Ireland. Journal of the Geological Society, 180(1). doi:https://doi.org/10.1144/jgs2022-024.
+
+Patel, R. (2023). Energy transfer in the lower trophic pelagic food web of the Celtic Sea ecosystem. [online] centaur.reading.ac.uk. Available at: https://centaur.reading.ac.uk/114300/ [Accessed 3 May 2024].
+
+Peck, R., Short, T. and Olsen, C. (2020). Introduction to statistics and data analysis. [online] thuvienso.hoasen.edu.vn. Cengage Learning. Available at: https://thuvienso.hoasen.edu.vn/handle/123456789/12547.
+
+Pitois, S.G., Fileman, E., Benfield, M.C., Wiebe, P.H. and Lombard, F. (2023). Technological Advances for Measuring Planktonic Components of the Pelagic Ecosystem: An Integrated Approach to Data Collection and Analysis. Frontiers Media SA.
+
+Robert, M., Pawlowski, L. and Kopp, D. (2022). TrophicCS: Spatialized trophic data of the Celtic Sea continental shelf food web. Ecology, 103(8). doi:https://doi.org/10.1002/ecy.3708.
+
+Rose, G.A. (2019). Atlantic cod : a bio-ecology. Hoboken, Nj Wiley Blackwell.
+
+Rotjan, R.D., Amon, D., Chadwick, W.W. and Hammond, S. (2021). Pacific Deep-Sea Discoveries: Geological and Biological Exploration, Patterns, and Processes. Frontiers Media SA.
+
+Russo, T., Villasante, S. and Libralato, S. (2023). Fishing in the Time of COVID-19: Effects on Fishing Activities, Resources, and Marine Ecosystems. Frontiers Media SA.
+
+Saltz, J.S. (2021). CRISP-DM for Data Science: Strengths, Weaknesses and Potential Next Steps. 2021 IEEE International Conference on Big Data (Big Data). doi:https://doi.org/10.1109/bigdata52589.2021.9671634.
+
+Schröer, C., Kruse, F. and Gómez, J.M. (2021). A Systematic Literature Review on Applying CRISP-DM Process Model. Procedia Computer Science, 181(1), pp.526–534.
+
+Silvar-Viladomiu, P., Minto, C., Lordan, C., Brophy, D., Bell, R., Collie, J. and Reid, D. (2023). Stochastic modelling and synthesis of dynamic fish recruitment productivity in the Celtic Seas ecoregion. ICES journal of marine science, [online] 80(9), pp.2329–2341. doi:https://doi.org/10.1093/icesjms/fsad146.
+
+Solano, J.A., Lancheros Cuesta, D.J., Umaña Ibáñez, S.F. and Coronado-Hernández, J.R. (2022).
+
+Predictive models assessment based on CRISP-DM methodology for students performance in Colombia - Saber 11 Test. Procedia Computer Science, 198, pp.512–517. doi:https://doi.org/10.1016/j.procs.2021.12.278.
+
+Sven Sebastian Uhlmann, Ulrich, C., Kennelly, S.J. and Springerlink (Online Service (2019). The European Landing Obligation : Reducing Discards in Complex, Multi-Species and Multi-Jurisdictional Fisheries. Cham: Springer International Publishing.
+
+Tóth, Z., McCarron, S., Wheeler, A.J., Wenau, S., Davis, S., Lim, A. and Spiess, V. (2020). Geomorphological and seismostratigraphic evidence for multidirectional polyphase glaciation of the northern Celtic Sea. Journal of Quaternary Science, [online] 35(3), pp.465–478. doi:https://doi.org/10.1002/jqs.3189.
+
+Tsikliras, A.C., Daskalov, G.M., Georgios Sylaios, Coro, G., Scotti, M. and Grémillet, D. (2023). Ecocentric fisheries management in european seas: Data gaps, base models and initial assessments, volume I. Frontiers Media SA.
+
+Valdés, L., López-Urrutia, A., Beaugrand, G., Harris, R.P. and Irigoien, X. (2022). Seasonality and interannual variability of copepods in the Western English Channel, Celtic Sea, Bay of Biscay, and Cantabrian Sea with a special emphasis to Calanus helgolandicus and Acartia clausi. ICES Journal of Marine Science, 79(3), pp.727–740. doi:https://doi.org/10.1093/icesjms/fsac052.
+
+Vivanco, L. (2020). Source rocks and basin modeling: [basin analysis Celtic sea]. redi.anii.org.uy. [online] Available at: https://redi.anii.org.uy/jspui/handle/20.500.12381/3127 [Accessed 3 May 2024].
+
+Vladimir Laptikhovsky, A Louise Allcock, Barnwall, L., Barrett, C., Cooke, G., Drerup, C., Firmin, C., Lozach, S., MacLeod, E., Oesterwind, D., Petroni, M., Robin, J.-P., Sheerin, E., Power, A.-M. and Pierce, G.J. (2022). Spatial and temporal variability of spawning and nursery grounds of Loligo forbesii and Loligo vulgaris squids in ecoregions of Celtic Seas and Greater North Sea. Ices Journal of Marine Science, 79(6), pp.1918–1930. doi:https://doi.org/10.1093/icesjms/fsac128.
+
+Zeng, Z., Li, Y., Li, Y. and Luo, Y. (2022). Statistical and machine learning methods for spatially resolved transcriptomics data analysis. Genome Biology, 23(1). doi:https://doi.org/10.1186/s13059-022-02653-7.
+
+Zied Ben Bouallègue, Clare, M.C.A., Magnusson, L., Estibaliz Gascón, Maier-Gerber, M., Janoušek, M., Rodwell, M., Pinault, F., Dramsch, J.S., Lang, S.T.K., Baudouin Raoult, Rabier, F., Chevallier, M., Sandu, I., Dueben, P., Chantry, M. and Florian Pappenberger (2024). The rise of data-driven weather forecasting: A first statistical assessment of machine learning-based weather forecasts in an operational-like context. Bulletin of the American Meteorological Society. doi:https://doi.org/10.1175/bams-d-23-0162.1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
